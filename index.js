@@ -1,10 +1,5 @@
 function getComputerChoice () {
-const randomNumber = Math.floor(Math.random() * 3);
-
-switch (randomNumber) {
-  case 0: return Rock;
-  case 1: return Paper;
-  case 2: return Scissors;
-  }
-
-} 
+  const choices = ["rock","paper","scissors"];
+  return choices[Math.floor(Math.random() * choices.length)];
+}
+console.log (getComputerChoice());
